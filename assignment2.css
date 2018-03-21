@@ -1,0 +1,31 @@
+#xcanvas {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.shape-input-box {
+    padding-top: 10px;
+}
+
+.shape-input-box {
+    padding-top: 10px;
+}
+
+#shape b {
+    position:absolute;
+    color:rgb(91,111,135);
+}
+
+.shape-title {
+    max-width: 220px
+}
+
+.shape-btn {
+    margin-left: 10px;
+}
+
+.info-msg {
+    color: red;
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Computer Graphics 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assignment2.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="padding-left:10%">Computer Graphics I - Programming Assignment 2: 2D Drawing</h2>
+        <h3 style="padding-left:25%">Karansinh Thakor(Student ID: 01726794)</h3>
+        <h6 style="padding-left:30%">Note: Please fill input field to draw shape</h6>
+        <div class="col-md-12 col-sm-6 col-lg-12 form-inline shape-input-box">
+            <div class="shape-title">
+                <h4>Question 1: </h4>
+            </div>
+            <input type="text" id="pointx1" class="form-control input-sm col-lg-1 col-sm-1 num-input" placeholder="Enter x1">
+            <input type="text" id="pointy1" class="form-control input-sm col-lg-1 col-sm-1 num-input" placeholder="Enter y1">
+            <input type="text" id="pointx2" class="form-control input-sm col-lg-1 col-sm-1 num-input" placeholder="Enter x2">
+            <input type="text" id="pointy2" class="form-control input-sm col-lg-1 col-sm-1 num-input" placeholder="Enter y2">
+            Ratio/X: <input type="text" id="ratio" class="form-control input-sm col-lg-1 col-sm-1 num-input" placeholder="Enter X">
+            <button type="button" onclick="drawFractal()" class="form-control btn btn-primary btn-md shape-btn">Draw Fractal</button>
+            <button type="button" onclick="nextIteration()" class="form-control btn btn-primary btn-md shape-btn">Next Iteration</button>
+            <button type="button" onclick="clearShape()" class="form-control btn btn-danger btn-md shape-btn">Clear Fractal</button>
+        </div>
+        <div class="col-md-12 col-sm-6 col-lg-12 form-inline shape-input-box">
+            <div class="shape-title">
+                <h4>Question 2: </h4>
+            </div>
+            <select id="wheelColor" class="form-control" placeholder="Select color">
+                <option value="#000000">Black</option>
+                <option value="#FF0000">Red</option>
+                <option value="#FFFF00">Yellow</option>
+                <option value="#00FFFF">Aqua</option>
+                <option value="#808080">Gray</option>
+                <option value="#0000FF">Blue</option>
+                <option value="#800080">Purple</option>
+                <option value="#008000">Green</option>
+            </select>
+            <input type="text" id="driverScore" class="form-control input-sm col-lg-3 col-sm-3 num-input" placeholder="Please enter driver score"
+                aria-label="DriverScore">
+            <input type="text" id="wheelRad" class="form-control input-sm col-lg-3 col-sm-3 num-input" placeholder="Please enter radius > 70"
+                aria-label="DriverScore">
+            <button type="button" onclick="drawWheelShape()" class="form-control btn btn-primary btn-md shape-btn">Draw Wheel</button>
+            <button type="button" onclick="clearShape()" class="form-control btn btn-danger btn-md shape-btn">Clear Wheel</button>
+            <p id="info-msg" class="info-msg"> Please enter all details.</p>
+        </div>
+        <div style="margin:5% 0 0 0">
+            <canvas id="xcanvas" width="1000" height="400">
+            </canvas>
+        </div>
+    </div>
+    <script src="assignment2.js"></script>
+</body>
+
+</html>
