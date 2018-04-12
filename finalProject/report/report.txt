@@ -1,11 +1,15 @@
 Computer Graphics Final Project:
 
-I started working on the 3D model of the rectangle and cylinder shape.
+I started working on the 3D model of the simple cube shape.
 
-I have just implemented basic 3D rectangle and cylinder.
+I have implemented basic cube with the plane.
+
+Recently, i implemented simple cube rotating in the plane.
+
+In my current update, i have provided the user to dynamically select the object and rotate in all directions.
 
 In the next step, i am planning to implement the all view of the shape and then after UI interface and scaling.
 
-Currenly i don't have much to display in Project but in the next submission, i will implement most part.
+I will also provide the ability to select the object, color and size of the object.
 
 Karansinh Thakor(01726794)
