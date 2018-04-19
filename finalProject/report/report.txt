@@ -6,9 +6,12 @@ I have implemented basic cube with the plane.
 
 Recently, i implemented simple cube rotating in the plane.
 
-In my current update, i have provided the user to dynamically select the object and rotate in all directions.
+I also provided the user to dynamically select the object and rotate in all directions.
 
-In the next step, i am planning to implement the all view of the shape and then after UI interface and scaling.
+I have started working on the object selection and view interface. I am facing some erros in the project so that's why 
+i don't have much to present in this week submission.
+
+In the next update, i am planning to implement the all view of the shape and then after UI interface and scaling.
 
 I will also provide the ability to select the object, color and size of the object.
 

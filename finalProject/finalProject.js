@@ -35,14 +35,14 @@ function createScene(){
 	
 	//add items to scene
 	var heroGeometry = new THREE.BoxGeometry( 1, 1, 1 );//cube
-	var heroMaterial = new THREE.MeshStandardMaterial( { color: 0xB13E0F } );
+	var heroMaterial = new THREE.MeshStandardMaterial( { color: 0x7CFC00 } );
 	hero = new THREE.Mesh( heroGeometry, heroMaterial );
 	hero.castShadow=true;
 	hero.receiveShadow=false;
 	hero.position.y=2;
 	scene.add( hero );
 	var planeGeometry = new THREE.PlaneGeometry( 5, 5, 4, 4 );
-	var planeMaterial = new THREE.MeshStandardMaterial( { color: 0x2E9AFE } )
+	var planeMaterial = new THREE.MeshStandardMaterial( { color: 0x00BFFF } )
 	ground = new THREE.Mesh( planeGeometry, planeMaterial );
 	ground.receiveShadow = true;
 	ground.castShadow=false;
