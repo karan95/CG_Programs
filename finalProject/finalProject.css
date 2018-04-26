@@ -1,3 +1,15 @@
 #TutContainer {
     padding-top: 5%;
 }
+
+.centerPosition {
+    padding-left:25%;
+}
+
+.colorpicker {
+    padding-left: 10px;
+}
+
+.pullright {
+    float: right;
+}

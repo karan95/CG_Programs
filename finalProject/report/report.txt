@@ -8,11 +8,13 @@ Recently, i implemented simple cube rotating in the plane.
 
 I also provided the user to dynamically select the object and rotate in all directions.
 
-I have started working on the object selection and view interface. I am facing some erros in the project so that's why 
-i don't have much to present in this week submission.
+I have improved the object view interface and implemented color selection interface with user's ability to select
+object and plane color. 
 
-In the next update, i am planning to implement the all view of the shape and then after UI interface and scaling.
+Color selection interface is user-friendly which provides the instant color changes in view after selection by user.
 
-I will also provide the ability to select the object, color and size of the object.
+User can zoom in and out with proper mouse and keyboard options according to operating system and device.
+
+In my next phase of the application, i will include multiple object with select option and also projections of the object.
 
 Karansinh Thakor(01726794)

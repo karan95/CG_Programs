@@ -11,11 +11,35 @@ var sun;
 var ground;
 var orbitControl;
 
+var objectColor = "#7CFC00";
+var planeColor = "#00BFFF";
+
+$("#object").spectrum({
+	color: objectColor,
+    move: function(color) {
+		objectColor = color.toHexString();
+		objectUpdate();
+	 },
+    show: function(color) { },
+    hide: function(color) { },
+    beforeShow: function(color) { },
+});
+
+$("#plane").spectrum({
+	color: planeColor,
+	move: function(color) {
+		planeColor = color.toHexString();
+		objectUpdate();
+	 },
+    show: function(color) { },
+    hide: function(color) { },
+    beforeShow: function(color) { },
+});
+
 init();
 function init() {
 	// set up the scene
 	createScene();
-
 	//call game loop
 	update();
 }
@@ -29,20 +53,25 @@ function createScene(){
     renderer = new THREE.WebGLRenderer({alpha:true});//renderer with transparent backdrop
     renderer.shadowMap.enabled = true;//enable shadow
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    renderer.setSize( sceneWidth, sceneHeight );
+	renderer.setSize( sceneWidth, sceneHeight );
+	THREEx.WindowResize(renderer, camera);
+	THREEx.FullScreen.bindKey({ charCode : 'm'.charCodeAt(0) });
+	// CONTROLS
+	controls = new THREE.OrbitControls( camera, renderer.domElement );
     dom = document.getElementById('TutContainer');
 	dom.appendChild(renderer.domElement);
-	
+
 	//add items to scene
-	var heroGeometry = new THREE.BoxGeometry( 1, 1, 1 );//cube
-	var heroMaterial = new THREE.MeshStandardMaterial( { color: 0x7CFC00 } );
+	heroGeometry = new THREE.BoxGeometry( 1, 1, 1 );//cube
+	heroMaterial = new THREE.MeshStandardMaterial( { color: objectColor } );
 	hero = new THREE.Mesh( heroGeometry, heroMaterial );
 	hero.castShadow=true;
 	hero.receiveShadow=false;
 	hero.position.y=2;
 	scene.add( hero );
-	var planeGeometry = new THREE.PlaneGeometry( 5, 5, 4, 4 );
-	var planeMaterial = new THREE.MeshStandardMaterial( { color: 0x00BFFF } )
+
+	planeGeometry = new THREE.PlaneGeometry( 5, 5, 4, 4 );
+	planeMaterial = new THREE.MeshStandardMaterial( { color: planeColor } )
 	ground = new THREE.Mesh( planeGeometry, planeMaterial );
 	ground.receiveShadow = true;
 	ground.castShadow=false;
@@ -81,6 +110,12 @@ function update(){
     render();
 	requestAnimationFrame(update);//request next update
 }
+
+function objectUpdate() {
+	heroMaterial.color.set(objectColor);
+	planeMaterial.color.set(planeColor);
+}
+
 function render(){
     renderer.render(scene, camera);//draw
 }

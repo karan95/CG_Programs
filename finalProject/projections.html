@@ -13,27 +13,16 @@
         crossorigin="anonymous"></script>
     <script src='spectrum.js'></script>
     <link rel='stylesheet' href='spectrum.css' />
-    <script src="js/THREEx.FullScreen.js"></script>
-    <script src="js/THREEx.WindowResize.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h2 class="centerPosition">Computer Graphics I - Final Project</h2>
-        <h3 class="centerPosition">Karansinh Thakor(Student ID: 01726794)</h3>
-        <p class="centerPosition"> ( Note: Please select the object and rotate in all directions. )</p>
-        <a class="centerPosition" href="./projections.html">Click this link to see projections</a>
-        <div class="pullright">
-            <label>Select Object color: </label>
-            <input type='color' class="colorpicker" name='color' id="object" />
-            <label>Select Plane color: </label>
-            <input type='color' class="colorpicker" name='color' id="plane" />
-        </div>
+        <h2 class="centerPosition">Object Projections</h2>
     </div>
-    <div id="TutContainer"></div>
-    <script src="3dobject.js"></script>
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
-    <script src="finalProject.js"></script>
+    <div>
+        <canvas id="my-canvas"></canvas>
+    </div>
+    <script src="projections.js"></script>
 </body>
 
 </html>
