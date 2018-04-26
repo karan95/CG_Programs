@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Computer Graphics</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="finalProject.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src='spectrum.js'></script>
+    <link rel='stylesheet' href='spectrum.css' />
+    <script src="js/THREEx.FullScreen.js"></script>
+    <script src="js/THREEx.WindowResize.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="centerPosition">Computer Graphics I - Final Project</h2>
+        <h3 class="centerPosition">Karansinh Thakor(Student ID: 01726794)</h3>
+        <p class="centerPosition"> ( Note: Please select the object and rotate in all directions. )</p>
+        <a class="centerPosition" href="./projections.html">Click this link to see projections</a>
+        <div class="pullright">
+            <label>Select Object color: </label>
+            <input type='color' class="colorpicker" name='color' id="object" />
+            <label>Select Plane color: </label>
+            <input type='color' class="colorpicker" name='color' id="plane" />
+        </div>
+    </div>
+    <div id="TutContainer"></div>
+    <script src="3dobject.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+    <script src="finalProject.js"></script>
+</body>
+
+</html>

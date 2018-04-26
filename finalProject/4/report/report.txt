@@ -1,0 +1,20 @@
+Computer Graphics Final Project:
+
+I started working on the 3D model of the simple cube shape.
+
+I have implemented basic cube with the plane.
+
+Recently, i implemented simple cube rotating in the plane.
+
+I also provided the user to dynamically select the object and rotate in all directions.
+
+I have improved the object view interface and implemented color selection interface with user's ability to select
+object and plane color. 
+
+Color selection interface is user-friendly which provides the instant color changes in view after selection by user.
+
+User can zoom in and out with proper mouse and keyboard options according to operating system and device.
+
+In my next phase of the application, i will include multiple object with select option and also projections of the object.
+
+Karansinh Thakor(01726794)
